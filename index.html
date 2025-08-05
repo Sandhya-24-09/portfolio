@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!--nav bar-->
+    <nav>
+        <div class="left">
+            <a href="/">Sandhya Srinivas</a>
+        </div>
+        <div class="right">
+            <a href="https://github.com/Sandhya-24-09" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>Github</span></a>
+                <a href="https://www.linkedin.com/in/sandhya-srinivas-yr-03b769327/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn</span></a>
+                <a href="https://sandhyasrinivasyr@gmail.com" >
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
+    </nav>
+    <main>
+        <section class="name-section" >
+            <div class="text">
+                <h2>Hi, I'm Sandhya Srinivas</h2>
+                <p>I am a front-end development enthusiast passionate about creating clean, responsive, and user-friendly web interfaces.
+Skilled in HTML, CSS, JavaScript, and basic Java, with hands-on experience through personal projects.
+Curious by nature and always eager to learn new tools, frameworks, and design patterns.
+
+Participated in technical and communication events, building both coding and soft skills.
+Currently seeking opportunities to grow through real-world projects and internship experiences.</p>
+<div class="links">
+    <a href="#skills">
+        <i class="fa-solid fa-code"></i>
+        <span>Skills</span>
+    </a>
+    <a href="#contact">
+        <i class="fa-solid fa-address-card"></i>
+        <span>Contacts</span>
+    </a>
+</div>
+            </div>
+            <div class="photo">
+                <img src="images/sandhya photo.jpg" alt="Sandhya Srinivas photo">
+            </div>
+            
+        </section><!--main-->
+        <section id="skills" class="skill-section">
+            <h2>SKILLS</h2>
+            <div class="text">
+               I style vibes with CSS, structure dreams with HTML,
+bring pages to life with JavaScript magic,
+and keep things classy (and compiled) with Java. 
+            </div>
+            <div class="class">
+                <div class="cell">
+                    <img src="images/html.png" alt="HTML" width="45px">
+                    <span>HTML</span>
+                </div>
+                <div class="cell">
+                    <img src="images/css-3.png" alt="CSS" width="45px">
+                    <span>CSS</span>
+                </div>
+                <div class="cell">
+                    <img src="images/js.png" alt="Javascript" width="45px">
+                    <span>JAVASCRIPT</span>
+                </div>
+                <div class="cell">
+                    <img src="images/java.png" alt="Java" width="45px">
+                    <span>Java</span>
+                </div>
+            </div>
+        </section><!--skills-->
+
+        <section id="contact" class="contact-section">
+            <h2>CONTACT</h2>
+            <a href="#contact">Contact</a>
+            <div class="group">
+            <div class="text">
+                I’m always welcoming and delighted to connect and collaborate!
+If you're a recruiter or a developer, or someone with a project in mind —
+feel free to reach out using the form below.
+I’ll get back to you as soon as I can.
+Let’s build something awesome together!
+            </div>
+            <form action="https://formsubmit.co/sandhyasrinivasyr@gmail.com" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter email" required>
+                <label for="message">Message</label>
+                <textarea id="message" cols="30" rows="10" placeholder="Enter message"></textarea>
+                <button type="submit">Send message</button>
+ 
+
+            </form>
+            </div>
+        </section><!--contact-->
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,227 @@
+root{
+    --text-color: #1a1c20;
+    --background-color:#eeeff1;
+    --link-color:#4a76ee;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+     scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+a{
+    color: var(--link-color);
+    text-decoration: none;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+nav .left a{
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 22px;
+}
+nav .right a{
+    color: var(--text-color);
+    margin: 0 10px;
+}
+nav .right a:last-child {
+    color: #eeeff1;
+    background-color: #1a1c20;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+@media(max-width:600px){
+nav{
+    padding: 0 20px;
+}
+nav .right a{
+    font-size: 22px;
+}
+nav .right a:last-child{
+    color:var(--text-color);
+    background-color: transparent;
+    padding: 0;
+}
+nav .right a span{
+    display: none;
+}
+.name-section {
+display: none;
+}
+.name-section .text h2{
+    font-size: 30px;
+}
+.skill-section{
+    padding: 0 20px;
+}
+.skill-section .calls .cell span{
+    font-size: 30px;
+}
+.contact-section{
+    padding: 0 20px;
+}
+}
+.name-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+.name-section .text{
+    flex: 6;
+    
+}
+.name-section .text h2{
+    font-size: 45px;
+}
+.name-section .text .links{
+    margin-top: 25px ;
+}
+.name-section .text .links a {
+    color:#4a76ee;
+ border: 2px solid #4a76ee;
+ padding:5px 10px ;
+ display: inline-block;
+ border-radius: 5px;
+ margin-right: 10px;
+ margin-bottom: 10px;
+
+ transition: 0.1s;
+}
+.name-section .text .links a:hover {
+    color: #1a1c20;
+    border: 2px solid #1a1c20;
+   
+
+}
+.name-section .photo {
+    flex: 4;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.name-section .photo img {
+   width: 400px;
+    border-radius: 50%; /* optional */
+}
+@media(max-width:800px){
+ .name-section .text h2{
+    font-size:30px;
+ }
+
+}
+@media(max-width:700px){
+    .name-section{
+        flex-direction: column-reverse;
+    }
+    .name-section .photo img{
+        width: 250px;
+    }
+    .contact-section .group{
+        flex-direction: column;
+    }
+}
+.skill-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.skill-section h2{
+    text-align: center;
+    font-size: 30px;
+}
+.skill-section .text{
+    text-align: center;
+   
+    margin-bottom: 20px;
+}
+.skill-section .class{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.skill-section .class .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 10px 20px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    gap: 10px;
+
+}
+.skill-section .class .cell img{
+    width: 45px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+.skill-section .class .cell span{
+    font-size: 18px;
+}
+.contact-section{
+    scroll-behavior: smooth;
+    padding: 0 50px;
+    margin-bottom: 100px;
+   
+
+}
+.contact-section h2{
+    font-size: 35px;
+}
+.contact-section .group{
+    display: flex;
+    gap: 50px;
+}
+.contact-section .group .text{
+    flex: 3;
+    margin-top: 20px;
+}
+.contact-section .group form{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.contact-section .group form input,
+.contact-section .group form textarea{
+    font-family: 'Poppins',sans-serif;
+    border: 2px solid blue;
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+}
+.contact-section .group form button{
+    font-size: 18px;
+    font-family: 'Poppins',sans-serif;
+    color: #eeeff1;
+    background-color: blue;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: 2.1s;
+}
+.contact-section .group form button:hover{
+    filter: brightness(.9);
+}
